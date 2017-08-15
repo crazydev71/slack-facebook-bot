@@ -68,7 +68,7 @@ var bot_options = {
     clientId: process.env.clientId,
     clientSecret: process.env.clientSecret,
     // debug: true,
-    scopes: ['bot'],
+    scopes: ['bot', 'command', 'incoming-webhook'],
     studio_token: process.env.studio_token,
     studio_command_uri: process.env.studio_command_uri
 };
