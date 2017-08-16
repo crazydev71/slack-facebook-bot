@@ -10,7 +10,7 @@ through the conversation are chosen based on the user's response.
 */
 
 module.exports = function(controller) {
-
+/*
     controller.hears(['color'], 'direct_message,direct_mention', function(bot, message) {
 
         bot.startConversation(message, function(err, convo) {
@@ -88,5 +88,5 @@ module.exports = function(controller) {
         });
 
     });
-
+*/
 };
