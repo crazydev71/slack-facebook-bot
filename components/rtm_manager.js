@@ -62,7 +62,5 @@ module.exports = function(controller) {
         }
     }
 
-
     return manager;
-
 }
