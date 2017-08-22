@@ -1,5 +1,5 @@
-const SlashCommands = require('../lib/slashCommands');
-const Conversation = require('../lib/conversation');
+const SlashCommands = require('../lib/slack/slashCommands');
+const Conversation = require('../lib/slack/conversation');
 
 module.exports = function (controller) {
 
@@ -7,7 +7,7 @@ module.exports = function (controller) {
     controller.on('direct_message,direct_mention', function(bot, message) {
         // console.log("-------------------message command---------------");
         console.log(message);
-		// bot.reply(message, "You just typed '" + message.text + "'.");
+        
 		return Conversation.converse(controller.storage, bot, message);
 	});
 	
